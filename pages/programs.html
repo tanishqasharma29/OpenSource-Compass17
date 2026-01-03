@@ -2,55 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Program Filter</title>
+    <title>Open Source Programs - OpenSource Compass</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
         .filter-section {
+            background-color: var(--light-gray);
+            padding: 40px 8%;
             display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
-
         #searchBar, #categoryFilter {
-            padding: 8px;
+            padding: 12px 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
             font-size: 16px;
+            font-family: 'Inter', sans-serif;
         }
-
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .card {
-            border: 1px solid #ccc;
-            padding: 15px;
-            border-radius: 6px;
-        }
+        #searchBar { flex: 1; max-width: 400px; }
+        .programs-grid { min-height: 400px; }
     </style>
 </head>
 <body>
 
-    <section class="filter-section">
-        <input type="text" id="searchBar" placeholder="Search programs...">
-        <select id="categoryFilter">
-            <option value="all">All Levels</option>
-            <option value="Beginner Friendly">Beginner Friendly</option>
-            <option value="Advanced">Advanced</option>
-        </select>
-    </section>
+<header>
+    <h1><a href="index.html">OpenSource Compass</a></h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="guides.html">Guides</a>
+        <a href="programs.html" class="active">Programs</a>
+        <a href="Resources.html">Resources</a>
+    </nav>
+</header>
 
+<section class="filter-section">
+    <input type="text" id="searchBar" placeholder="Search by program name...">
+    <select id="categoryFilter">
+        <option value="all">All Difficulty Levels</option>
+        <option value="Beginner Friendly">Beginner Friendly</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+    </select>
+</section>
+
+<section class="programs-grid">
     <div id="programsGrid" class="card-container">
-        <div class="card" data-level="Beginner Friendly">HTML Basics</div>
-        <div class="card" data-level="Advanced">Advanced JavaScript</div>
-        <div class="card" data-level="Beginner Friendly">CSS Fundamentals</div>
-    </div>
+        </div>
+</section>
 
+<footer>
+    <p>© 2025 OpenSource Compass • Built for the Open Source Community</p>
+</footer>
+
+<script src="Js_scripts/programs.js"></script>
+<script>
+    // Initialize the page logic
+    document.addEventListener('DOMContentLoaded', loadPrograms);
+</script>
 </body>
 </html>

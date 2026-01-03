@@ -7,7 +7,7 @@
     "timeline": "May - August",
     "description": "Global program for advanced contributors to work on open source projects.",
     "link": "gsoc.html",
-    "official_url": "https://summerofcode.withgoogle.com/"
+    "status": "Active"
   },
   {
     "id": 2,
@@ -17,6 +17,6 @@
     "timeline": "June - August",
     "description": "Community-driven program for open-source beginners with a focus on social impact.",
     "link": "ssoc.html",
-    "official_url": "https://socialsummerofcode.com/"
+    "status": "Active"
   }
 ]
