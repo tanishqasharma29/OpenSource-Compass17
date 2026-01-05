@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Amazing Contributors | OpenSource-Compass</title>
+  <link rel="stylesheet" href="../css/contributors.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <i class="fab fa-github"></i>
+      <span>OpenSource-Compass</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="guides/">Guides</a>
+      <a href="programs/">Programs</a>
+      <a href="resources/">Resources</a>
+      <a href="https://github.com/sayeeg-11/OpenSource-Compass" target="_blank">GitHub</a>
+    </nav>
+    <div class="theme-toggle">
+      <i class="fas fa-moon"></i>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Our Amazing Contributors</h1>
+      <p>Meet the talented developers who make OpenSource-Compass better every day.</p>
+    </section>
+
+    <!-- Stats Dashboard -->
+    <section class="stats-dashboard">
+      <div class="stat-card">
+        <h3>Total Contributors</h3>
+        <div id="total-contributors" class="stat-value">...</div>
+      </div>
+      <div class="stat-card">
+        <h3>Total Commits</h3>
+        <div id="total-commits" class="stat-value">...</div>
+      </div>
+      <div class="stat-card">
+        <h3>Total PRs</h3>
+        <div id="total-prs" class="stat-value">...</div>
+      </div>
+      <div class="stat-card">
+        <h3>Total Points</h3>
+        <div id="total-points" class="stat-value">...</div>
+      </div>
+      <div class="stat-card">
+        <h3>GitHub Stars</h3>
+        <div id="github-stars" class="stat-value">...</div>
+      </div>
+      <div class="stat-card">
+        <h3>Forks</h3>
+        <div id="forks" class="stat-value">...</div>
+      </div>
+    </section>
+
+    <!-- Project Lead Spotlight -->
+    <section class="project-lead">
+      <div class="lead-badge">👑 Project Lead</div>
+      <img src="https://avatars.githubusercontent.com/u/109497078?v=4" alt="Sayee Gosavi" class="lead-avatar">
+      <h2>Sayee Gosavi</h2>
+      <p>Leading the project vision and development.</p>
+    </section>
+
+    <!-- Top Contributors Grid -->
+    <section class="top-contributors">
+      <h2>Top Contributors</h2>
+      <div id="contributors-grid" class="grid"></div>
+      <div class="pagination">
+        <button id="prev-page" disabled><i class="fas fa-chevron-left"></i> Prev</button>
+        <span id="page-info">Page 1 of ...</span>
+        <button id="next-page"><i class="fas fa-chevron-right"></i> Next</button>
+      </div>
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="recent-activity">
+      <h2>Recent Contribution Activity</h2>
+      <div id="activity-list" class="activity-container"></div>
+    </section>
+
+    <!-- Want to Contribute? -->
+    <section class="contribute-section">
+      <h2>Want to Contribute?</h2>
+      <p>Join our community and help improve OpenSource-Compass</p>
+      <div class="contribute-steps">
+        <div class="step-card">
+          <div class="icon"><i class="far fa-clipboard"></i></div>
+          <h3>Create an Issue</h3>
+          <p>Describe your change and wait for assignment.</p>
+        </div>
+        <div class="step-card">
+          <div class="icon"><i class="fab fa-github"></i></div>
+          <h3>Fork Repo</h3>
+          <p>Fork the main repository to your GitHub account.</p>
+        </div>
+        <div class="step-card">
+          <div class="icon"><i class="fas fa-code-branch"></i></div>
+          <h3>Create Branch</h3>
+          <p>Create a feature branch for your changes.</p>
+        </div>
+        <div class="step-card">
+          <div class="icon"><i class="fas fa-code"></i></div>
+          <h3>Make Changes</h3>
+          <p>Implement your features or bug fixes.</p>
+        </div>
+        <div class="step-card">
+          <div class="icon"><i class="fas fa-upload"></i></div>
+          <h3>Submit PR</h3>
+          <p>Create a pull request for review.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../Js_scripts/contributors.js"></script>
+</body>
+</html>
